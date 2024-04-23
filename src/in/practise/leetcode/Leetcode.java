@@ -1,6 +1,6 @@
-import sun.awt.Mutex;
+package in.practise.leetcode;
 
-import java.util.*;
+import sun.awt.Mutex;
 
 
 class TreeNode {
