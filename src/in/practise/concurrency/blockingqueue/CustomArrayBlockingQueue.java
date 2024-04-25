@@ -64,4 +64,13 @@ public class CustomArrayBlockingQueue<T> {
         return element;
 
     }
+
+    public int size(){
+        lock.lock();
+        try {
+            return size;
+        } finally {
+            lock.unlock();
+        }
+    }
 }
