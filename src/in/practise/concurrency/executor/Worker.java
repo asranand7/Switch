@@ -12,10 +12,11 @@ public class Worker implements Runnable{
         while(true){
             try {
                 Runnable task = taskQueue.take();
+                System.out.println("Running task at " + System.currentTimeMillis());
                 task.run();
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
-                System.out.println("Interrupt called");
+                System.out.println("Interrupt called in worker");
                 break;
             }
         }
