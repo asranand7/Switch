@@ -1,7 +1,7 @@
 package in.practise.concurrency.cache;
 
 public class CacheMain {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Cache<Integer, String> cache = new LRUCache<>(2);
         cache.put(1, "Anand");
         cache.put(2, "Sattu");
