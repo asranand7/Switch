@@ -12,6 +12,6 @@ public class CustomMutex {
 
     public synchronized void unlock(){
         locked = false;
-        notify();
+        notifyAll();
     }
 }
