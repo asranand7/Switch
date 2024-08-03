@@ -11,6 +11,8 @@ public class UuidMain {
             UUID uuid = Generators.timeBasedEpochGenerator().generate();
             Thread.sleep(1);
             System.out.println(uuid);
+
+            System.out.println("Test");
         }
 
     }
